@@ -1,0 +1,1 @@
+les fichiers .ttf sont à mettre dans le dossier C:/Windows/Fonts

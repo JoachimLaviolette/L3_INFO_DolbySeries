@@ -1,0 +1,450 @@
+html
+{
+	min-height: 100%;
+	min-width: 100%;
+	font-family: Trebuchet MS, sans-serif;
+}
+
+input,button
+{
+	font-family: Trebuchet MS, sans-serif;
+}
+
+body
+{
+	background-color: #E3E3E3;
+	min-height: 100%;
+	min-width: 100%;
+	margin: 0;
+}
+
+main
+{
+	background-color: #fff;
+	height: 100%;
+	width: 55%;
+	margin: auto;
+	box-shadow: 1px 1px 12px #555555;
+}
+
+main > header
+{
+	background-color: #00073a;
+	height: 100%;
+	/*padding-left: 1.5%;
+	padding-right: 1.5%;
+	padding-top: 0.2%;*/
+	margin: 0;
+}
+
+main > header > #header > #logo_header 
+{
+	display: inline-block;
+	margin: 0;
+}
+
+main > header > #header > #search_bar 
+{
+	position: absolute;
+	display: inline-block;
+	top: 5%;
+	left: 42%;
+}
+
+main > header > #header > #search_bar > form > input,
+main > #main > #main_content > #series_search_bar > form > input
+{
+	padding: 10px;
+	border: 0.5px solid #000000;
+	height: 15px;
+	
+}
+
+main > header > #header > #search_bar > form > #search_button,
+main > #main > #main_content > #series_search_bar > form > #search_button
+{
+	background-color: #000000;
+	color: #FFFFFF;
+	font-weight: bold;
+	
+	padding: 10px;
+	border: 0.5px solid #000000;
+	margin-top: 1.5px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+main > #menu
+{
+	background-color: #000000;
+	width: 100%;
+	padding-right: 0.01%;
+	margin: 0;
+	font-weight: bold;
+	font-size: 15px;
+	
+	color: #FFFFFF;
+}
+
+main > #menu > #cat,
+main > #menu > #account
+{
+	display: inline-block;
+	margin: 0;
+}
+
+main > #menu > #cat
+{
+	width: 47%;
+	padding-left: 2%;
+	text-align: left;
+}
+
+main > #menu > #account
+{
+	width: 47%;
+	padding-right: 2%;
+	text-align: right;
+}
+
+main > #menu > #cat > ul,
+main > #menu > #account > ul
+{
+	margin: 0;
+	padding-left: 0;
+}
+
+main > #menu > #cat > ul > li,
+main > #menu > #account > ul > li
+{
+	display: inline-block;
+	padding: 1% 2% 1% 2%;
+}
+
+main > #menu > #cat > ul > li > a,
+main > #menu > #account > ul > li > a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+main > #menu > #cat > ul > li > a:hover,
+main > #menu > #account > ul > li > a:hover
+{
+	color: #ff9933;
+}
+
+#selected
+{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+main > #sep 
+{
+	color: #000000;
+	
+	font-weight: bold;
+	width: 100%;
+	height: 20px;
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom: 4px;	
+}
+
+
+#list_of_search
+{
+	display: none;
+	position: absolute;
+	z-index:3;
+	top: 100%;
+	margin: 0;
+	background-color: #fff;
+}
+
+#list_of_search > ul
+{
+	list-style: none;
+	margin: 0;
+	border-style: solid;
+    border-width: 0px 0px 0px 5px;
+    border-color: #648fea;
+	padding-left:0;
+	padding-top: 3px;
+	box-shadow: 3px 3px 4px #000000;
+}
+
+#list_of_search > ul > li
+{
+	margin: 0;
+	font-size: 13px;
+	
+	cursor: pointer;
+	padding: 4px 0 0 115px;
+	margin-left: 3px;
+	background-size: 110px 150px; 
+	background-repeat: no-repeat; 
+	height: 150px;
+}
+
+#list_of_search > ul > li:hover
+{
+    background-color: #eaeaea;
+}
+
+main > #main
+{
+	margin: 0;
+}
+
+main > #main > #main_title 
+{
+	background-image: url("../medias/series/headers/background_title_recherche.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+main > #main > #main_title > p
+{
+	
+	font-size: 35px;
+	text-align: center;
+	margin: 0;
+	color: #FFFFFF;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+main > #main > #main_content
+{
+	background-color: #FFFFFF;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2%;
+}
+
+main > #main > #main_content > p
+{
+	margin: 0;
+	text-align: center;
+	
+	font-size: 25px;	
+	padding-bottom: 3%;
+}
+
+footer
+{
+	background-color: #000000;
+	height: 10%;
+	padding-bottom: 0.2%;
+	color: #FFFFFF;	
+	font-weight: bold;
+	font-size: 15px;
+	
+}
+
+footer > #copyright
+{
+	display: inline-block;
+	text-align: left;
+	width: 50%;
+	padding-left: 2%;
+}
+
+footer > #links
+{
+	display: inline-block;
+	text-align: right;
+	width: 45%;
+	padding-right: 2%;
+}
+
+footer > #links > ul
+{
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+footer > #links > ul > li
+{
+	display: inline-block;
+}
+
+footer > #links > ul > li > a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+footer > #links > ul > li > a:hover 
+{ 
+    color: #ff9933;
+}
+
+footer > #popup_dev_bg,
+footer > #popup_contact_bg
+{
+	display: none;
+	background-color: #000;
+	opacity: 0.5;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin:0;
+	left:0px;
+  	top: 0px;
+}
+
+footer > #popup_dev,
+footer > #popup_contact
+{
+	display: none;
+	position: absolute;
+	padding: 0;
+	width: 56%;
+ 	height: 55%;
+	top: 5%;
+	left: 21%;
+	background-color: #fff;
+	margin: 0;
+	top: 20%;
+	padding: 1% 1% 1% 1%;
+	box-shadow: 1px 1px 12px #555555;	
+  	font-weight: initial;
+}
+	
+.popup_footer_title
+{
+	text-align: center;
+	font-size: 35px;	
+	color: #000;
+	margin: 0 0 0 0;
+}
+
+.popup_footer_title > p
+{
+	margin: 0;
+}
+
+.popup_footer_content
+{
+	margin: 0;
+	padding: 2%;
+	color: #000;
+	margin-top: 1%;
+}
+
+.popup_footer_content > p
+{
+	margin: 3%;
+	font-size: 13px;
+}
+
+.popup_footer_content > p > a
+{
+	text-decoration: none;
+	color: #00073a;
+	cursor: pointer;
+}
+
+.popup_footer_content > p > a:hover
+{
+	text-decoration: underline;
+}
+
+.popup_footer_content > #contact_adresse
+{
+	margin: 2% 0 0 0;
+	padding-top: 2%;
+	text-align: center;
+}
+
+.popup_footer_content > #contact_adresse > p
+{
+	margin: 0;
+	font-size: 13px;
+	padding: 2px;
+}
+
+.popup_footer_content > #contact_adresse > p > a
+{
+	text-decoration: none;
+	color: #00073a;
+}
+
+.popup_footer_content > #contact_adresse > p > a:hover
+{
+	text-decoration: underline;
+}
+
+.contact_logo
+{
+	text-align: center;
+	margin-top: 4%;
+	width: 35%;
+}
+
+.dev_mails
+{
+	text-align: center;
+}
+
+#close_popup
+{
+	text-align: right;
+	margin: 0;
+	padding: 0;
+}
+
+#close_popup > img
+{
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+}
+
+#series_search_input
+{
+	height: 15px;
+	
+}
+
+.search_res
+{
+	margin: 0;
+	
+	padding: 1% 0 1% 18%;
+	margin-left: 3px;
+	background-size: 140px 190px; 
+	background-repeat: no-repeat; 
+	height: 190px;
+}
+
+.label
+{
+	font-size: 15px;
+	margin: 0;
+}
+
+.label > a
+{
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+}
+
+.label > a:hover
+{
+	color: #00073a;
+}
+
+.feature, .role
+{
+	font-size: 13px;
+	margin: 0;
+	font-style: italic;
+}

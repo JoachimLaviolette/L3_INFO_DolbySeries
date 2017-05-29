@@ -1,0 +1,667 @@
+html
+{
+	min-height: 100%;
+	min-width: 100%;
+	font-family: Trebuchet MS, sans-serif;
+}
+
+input,button
+{
+	font-family: Trebuchet MS, sans-serif;
+}
+
+body
+{
+	background-color: #E3E3E3;
+	min-height: 100%;
+	min-width: 100%;
+	margin: 0;
+}
+
+main
+{
+	background-color: #fff;
+	height: 100%;
+	width: 55%;
+	margin: auto;
+	box-shadow: 1px 1px 12px #555555;
+}
+
+main > header
+{
+	background-color: #BC0404;
+	height: 100%;
+	/*padding-left: 1.5%;
+	padding-right: 1.5%;
+	padding-top: 0.2%;*/
+	margin: 0;
+}
+
+main > header > #header > #logo_header 
+{
+	display: inline-block;
+	margin: 0;
+}
+
+main > header > #header > #search_bar 
+{
+	position: absolute;
+	display: inline-block;
+	top: 5%;
+	left: 42%;
+}
+
+main > header > #header > #search_bar > form > input
+{
+	padding: 10px;
+	border: 0.5px solid #000000;
+	height: 15px;
+	
+}
+
+main > header > #header > #search_bar > form > #search_button
+{
+	background-color: #000000;
+	color: #FFFFFF;
+	font-weight: bold;
+	
+	padding: 10px;
+	border: 0.5px solid #000000;
+	margin-top: 1.5px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+main > #menu
+{
+	background-color: #000000;
+	width: 100%;
+	padding-right: 0.01%;
+	margin: 0;
+	font-weight: bold;
+	font-size: 15px;
+	
+	color: #FFFFFF;
+}
+
+main > #menu > #cat,
+main > #menu > #account
+{
+	display: inline-block;
+	margin: 0;
+}
+
+main > #menu > #cat
+{
+	width: 47%;
+	padding-left: 2%;
+	text-align: left;
+}
+
+main > #menu > #account
+{
+	width: 47%;
+	padding-right: 2%;
+	text-align: right;
+}
+
+main > #menu > #cat > ul,
+main > #menu > #account > ul
+{
+	margin: 0;
+	padding-left: 0;
+}
+
+main > #menu > #cat > ul > li,
+main > #menu > #account > ul > li
+{
+	display: inline-block;
+	padding: 1% 2% 1% 2%;
+}
+
+main > #menu > #cat > ul > li > a,
+main > #menu > #account > ul > li > a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+main > #menu > #cat > ul > li > a:hover,
+main > #menu > #account > ul > li > a:hover
+{
+	color: #ff9933;
+}
+
+#selected
+{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+main > #sep 
+{
+	color: #000000;
+	
+	font-weight: bold;
+	width: 100%;
+	height: 20px;
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom: 4px;	
+}
+
+main > #main
+{
+	margin: 0;
+}
+
+main > #main > #main_title 
+{
+	background-image: url("../../medias/series/headers/background_title_personnalites.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+main > #main > #main_title > p
+{
+	
+	font-size: 35px;
+	text-align: center;
+	margin: 0;
+	color: #FFFFFF;	
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+main > #main > #main_content
+{
+	background-color: #FFFFFF;
+	padding-bottom: 0%;
+}
+
+main > #main > #main_content > #personnalite_zone > #personnalite_title
+{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 2%;
+}
+
+main > #main > #main_content > #personnalite_zone > #personnalite_title > p
+{
+	
+	font-size: 25px;
+	text-align: left;
+	margin: 0;
+}
+
+main > #main > #main_content > #personnalite_zone
+{
+	margin: 0;
+	width: 100%;
+	padding-top: 1%;
+	background-size: 100%;
+}
+
+main > #main > #main_content > #personnalite_zone > #personnalite_background
+{
+	padding-left: 1%;
+}
+
+main > #main > #main_content > #personnalite_zone > #personnalite_background > #personnalite_infos
+{
+	width: 40%;
+	display: inline-block;
+	padding-left: 1%;
+	padding-bottom: 1%;
+}
+
+main > #main > #main_content > #personnalite_zone > #personnalite_background > #personnalite_picture
+{
+	/*float: left;*/
+	display: inline-block;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-top: 1%;
+}
+
+main > #main > #main_content > #personnalite_zone > #personnalite_background > #personnalite_picture > #personnalite_pic
+{
+	height: 220px;
+	width: 160px;
+	box-shadow: 1px 1px 12px #555555;
+	border: 3px solid #fff;
+}
+
+.personnalite_feature
+{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.personnalite_infos_label
+{
+	width: 20%;
+	display: inline-block;
+}
+
+.personnalite_infos_label > p
+{
+	margin: 0;
+	
+	padding-left: 1%;
+	padding-right: 1%;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+#job_val, #name_val, #series_val
+{
+	width: 79%;
+	display: inline-block;
+}
+
+#job_val > p, 
+#name_val > p, 
+#series_val > p
+{
+	margin: 0;
+	
+	padding-left: 1%;
+	padding-right: 1%;
+	font-size: 13px;
+	display: inline-block;
+}
+
+.filmography_link
+{
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+main > #main > #main_content > #personnalite_nav_menu
+{
+	margin: 0;
+	/*position: relative;
+	top: -143px;
+	right: -255px;*/
+	margin-bottom: 2%;
+}
+
+main > #main > #main_content > #personnalite_nav_menu > .menu_tab
+{
+	display: inline-block;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 0.5px;
+	padding-bottom: 0.5px;
+	/*border: 0.5px solid #BC0404;*/
+	border-style: solid;
+	border-color: #BC0404;
+	border-width: 1px;
+    border-top: none;
+	width: 20%;
+	
+}
+
+main > #main > #main_content > #personnalite_nav_menu > .menu_tab > p
+{
+	margin: 0;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+}
+
+main > #main > #main_content > #personnalite_nav_menu > .menu_tab > p > a
+{
+	text-decoration: none;
+	color: #BC0404;
+}
+
+main > #main > #main_content > #personnalite_nav_menu > .menu_tab > p > a:hover
+{
+	color: #fff;
+}
+
+main > #main > #main_content > #personnalite_nav_menu > .menu_tab:hover
+{
+	background-color: #BC0404;
+	cursor: pointer;
+}
+
+main > #main > #main_content > #personnalite_nav_menu > .menu_tab:hover > p > a
+{
+	color: #fff;
+}
+
+main > #main > #main_content > #personnalite_nav_menu > #selected
+{
+	background-color: #BC0404;
+}
+
+main > #main > #main_content > #personnalite_nav_menu > #selected > p
+{
+	color: #FFFFFF;
+}
+
+main > #main > #main_content > #personnalite_series_zone > .label
+{
+	margin-bottom: 1%;
+	
+	text-transform: uppercase;
+	text-align: center;
+}
+
+main > #main > #main_content > #personnalite_series_zone > .label > p
+{
+	width: 20%;
+	color: #FFFFFF;
+	margin: 0;
+	background-color: #BC0404;
+	margin-bottom: 1.5%;
+	margin-right: 2%;
+	padding: .5% 0 .5% 0;
+}
+
+#series_pic, #series_desc
+{
+	padding-left: 10%;
+}
+
+#personnalite_series_zone
+{
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+
+#series_desc > p
+{
+	margin: 0;
+	margin-top: 2%;
+	margin-bottom: 10%;
+	text-align: center;
+	font-size: 13px;
+	
+}
+
+#series_desc > p > a
+{
+	text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+}
+
+#series_desc > p > a:hover
+{
+	color: #BC0404;
+}
+
+.series
+{
+	display: inline-block;
+}
+
+.series_pic
+{
+	height: 220px;
+	width: 160px;
+	margin-top: 3%;
+	margin-right: 11px;
+	margin-bottom: 0px;
+	border: 3px solid #fff;
+	box-shadow: 1px 1px 12px #555555;
+	max-width: 100%;
+}
+
+.series_pic:hover
+{
+	box-shadow: 1px 1px 12px #BC0404;
+}
+
+main > #main > #main_footer
+{
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	background-color: #FFFFFF;
+}
+
+main > #main > #main_footer > button
+{
+	background-color: #000000;
+	padding: 1.2%;
+	border: 0.5px solid #000000;
+	width: 40%;
+	cursor: pointer;
+	text-transform: uppercase;
+	
+}
+
+main > #main > #main_footer > button > a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+main > #main > #main_footer > button:hover
+{
+	background-color: #BC0404;
+	border: 0.5px solid #BC0404;
+}
+
+footer
+{
+	background-color: #000000;
+	height: 10%;
+	padding-bottom: 0.2%;
+	color: #FFFFFF;	
+	font-weight: bold;
+	font-size: 15px;
+	
+}
+
+footer > #copyright
+{
+	display: inline-block;
+	text-align: left;
+	width: 50%;
+	padding-left: 2%;
+}
+
+footer > #links
+{
+	display: inline-block;
+	text-align: right;
+	width: 45%;
+	padding-right: 2%;
+}
+
+footer > #links > ul
+{
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+footer > #links > ul > li
+{
+	display: inline-block;
+}
+
+footer > #links > ul > li > a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+footer > #links > ul > li > a:hover 
+{ 
+    color: #ff9933;
+}
+
+footer > #popup_dev_bg,
+footer > #popup_contact_bg
+{
+	display: none;
+	background-color: #000;
+	opacity: 0.5;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin:0;
+	left:0px;
+  	top: 0px;
+}
+
+footer > #popup_dev,
+footer > #popup_contact
+{
+	display: none;
+	position: absolute;
+	padding: 0;
+	width: 56%;
+ 	height: 55%;
+	top: 5%;
+	left: 21%;
+	background-color: #fff;
+	margin: 0;
+	top: 20%;
+	padding: 1% 1% 1% 1%;
+	box-shadow: 1px 1px 12px #555555;	
+  	font-weight: initial;
+}
+	
+.popup_footer_title
+{
+	text-align: center;
+	font-size: 35px;	
+	color: #000;
+	margin: 0 0 0 0;
+}
+
+.popup_footer_title > p
+{
+	margin: 0;
+}
+
+.popup_footer_content
+{
+	margin: 0;
+	padding: 2%;
+	color: #000;
+	margin-top: 1%;
+}
+
+.popup_footer_content > p
+{
+	margin: 3%;
+	font-size: 13px;
+}
+
+.popup_footer_content > p > a
+{
+	text-decoration: none;
+	color: #BC0404;
+	cursor: pointer;
+}
+
+.popup_footer_content > p > a:hover
+{
+	text-decoration: underline;
+}
+
+.popup_footer_content > #contact_adresse
+{
+	margin: 2% 0 0 0;
+	padding-top: 2%;
+	text-align: center;
+}
+
+.popup_footer_content > #contact_adresse > p
+{
+	margin: 0;
+	font-size: 13px;
+	padding: 2px;
+}
+
+.popup_footer_content > #contact_adresse > p > a
+{
+	text-decoration: none;
+	color: #BC0404;
+}
+
+.popup_footer_content > #contact_adresse > p > a:hover
+{
+	text-decoration: underline;
+}
+
+.contact_logo
+{
+	text-align: center;
+	margin-top: 4%;
+	width: 35%;
+}
+
+.dev_mails
+{
+	text-align: center;
+}
+
+#close_popup
+{
+	text-align: right;
+	margin: 0;
+	padding: 0;
+}
+
+#close_popup > img
+{
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+}
+
+
+#list_of_search
+{
+	display: none;
+	position: absolute;
+	z-index:3;
+	top: 100%;
+	margin: 0;
+	background-color: #fff;
+}
+
+#list_of_search > ul
+{
+	list-style: none;
+	margin: 0;
+	border-style: solid;
+    border-width: 0px 0px 0px 5px;
+    border-color: #648fea;
+	padding-left:0;
+	padding-top: 3px;
+	box-shadow: 3px 3px 4px #000000;
+}
+
+#list_of_search > ul > li
+{
+	margin: 0;
+	font-size: 13px;
+	
+	cursor: pointer;
+	padding: 4px 0 0 115px;
+	margin-left: 3px;
+	background-size: 110px 150px; 
+	background-repeat: no-repeat; 
+	height: 150px;
+}
+
+#list_of_search > ul > li:hover
+{
+    background-color: #eaeaea;
+}

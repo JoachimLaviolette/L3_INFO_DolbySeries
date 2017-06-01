@@ -205,7 +205,7 @@
 					</div>
 					<div id=\"main_content\">";
 
-		if(empty($search_list["personnalites_list"] && $search_list["series_list"]))
+		if(empty($search_list["personnalites_list"]) && empty($search_list["series_list"]))
 				echo        "<p>Aucun résultat à afficher.</p>";
 		else
 		{
